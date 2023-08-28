@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안경원사이트</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 3790px;
+            margin: 0;
+        }
+
+        .nav-bar {
+            width: 100%;
+            height: 100px;
+
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background-color: black;
+
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .nav-bar > div:nth-child(1){
+            font-size: 40px;
+            font-weight: 200;
+            color: white;
+            margin-left: 30px;
+        }
+
+        .nav-bar a{
+            text-decoration: none;
+            color: white;
+            margin-right: 100px;
+        }
+
+        .banner1 {
+            height: 865px;
+            margin-top: 100px;
+            filter: grayscale(70%) brightness(120%);
+            position: relative;
+        }
+
+        .banner1 > img {
+            width: 100%;
+        }
+        
+        .banner1 > h1 {
+            position: absolute;
+            bottom: 200px;
+            left: 120px;
+            color: white;
+            font-size: 15mm;
+            font-weight: 100;
+        }
+
+        .banner1 > h3 {
+            position: absolute;
+            bottom: 190px;
+            left: 125px;
+            color: white;
+        }
+
+        .banner2 {
+            height: 905px;
+            margin-top: 220px;
+            position: relative;
+            background-color: black
+        }
+
+        .banner2 > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner2 > h1 {
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            color: white;
+            font-size: 12mm;
+            font-weight: 100;
+        }
+
+        .banner3 {
+            height: 1100px;
+            position: relative;
+            margin-top: 220px;
+        }
+
+        .banner3 > img {
+            width: 100%;
+            height: 100%;
+            filter: brightness(105%);
+        }
+
+        .banner3 > h1 {
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            color: navy;
+            font-size: 12mm;
+            font-weight: 300;
+        }
+
+        .banner4 {
+            height: 1000px;
+            position: relative;
+            background-color: navy;
+        }
+
+        .banner4 > img {
+            width: 80%;
+            height: 100%;
+        }
+
+        .banner4 > h1 {
+            position: absolute;
+            top: 200px;
+            right: 75px;
+            color: white;
+            font-size: 10mm;
+        }
+
+        .banner4 > h2 {
+            position: absolute;
+            top: 350px;
+            right: 50px;
+            color: white;
+            font-size: 5mm;
+        }
+
+        .banner4 > button {
+            width: 200px;
+            height: 50px;
+            right: 4.5%;
+            bottom: 20%;
+
+            position: absolute;
+            font-size: 20px;
+            background-color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .bottom {
+            height: 130px;
+        }
+
+        .bottom > p {
+            color: white;
+            text-align: end;
+            margin-right: 30px;
+            margin-bottom: 5px;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .btn:hover {
+            filter: brightness(80%)
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-bar">
+                <div>A R T I S A N</div>
+                <div>
+                    <a href="#1">MAIN</a>
+                    <a href="#2">LINDBERG</a>
+                    <a href="#3">ZEISS</a>
+                    <a href="#4">나안 시력검사</a>
+                </div>
+            </div>
+
+        <div class="banner1" id="1">
+            <img src="https://c1.wallpaperflare.com/preview/322/452/904/glass-sneaker-person-man.jpg" alt="">
+            <h1>Design Your Eyes!</h1>
+            <h3>고객의 눈을 디자인 합니다.</h3>
+        </div>
+
+        <div class="banner2" id="2">
+            <img src="https://cdn.lindberg.com/media/2bzb22zm/precious_capella_header.png?format=webp&width=1920&height=1920&mode=min" alt="">
+            <h1>L&nbsp; I&nbsp; N&nbsp; D&nbsp; B&nbsp; E&nbsp; R&nbsp; G</h1>
+        </div>
+
+        <div class="banner3" id="3">
+            <img src="https://www.zeiss.co.kr/content/dam/z/vis-b2b/reference-master/images/lenses/lens-types/single-vision/single-vision-stock-pov.jpg/_jcr_content/renditions/original.image_file.1920.1080.0,180,1920,1260.file/single-vision-stock-pov.jpg" alt="">
+            <h1>Z E I S S</h1>
+        </div>
+
+        <div class="banner4" id="4">
+            <img src="https://www.diolens.co.kr/wp-content/uploads/2019/07/shutterstock_1038421897-scaled.jpg" alt="">
+            <h1>나안 시력검사</h1>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정밀 검사가 아니기 때문에 <br><br> 실제 안경 도수와 다를 수 있습니다.</h2>
+            <button class="btn" onclick="f_go()">바로가기</button>
+        </div>
+        <div class="bottom">
+            <p>(30128) 아르티장 안경원</p>
+            <p>세종특별자치시 나성동 398 마크원애비뉴</p>
+            <p>Tel.044-864-0118</p>
+        </div>
+    </div>
+
+    <script>
+        function f_go() {
+            location.href ="./01_시력검사시작페이지.html";
+        }
+    </script>
+</body>
+</html>
